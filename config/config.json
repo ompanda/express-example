@@ -1,17 +1,35 @@
 {
-  "development": {
-    "dialect": "sqlite",
-    "storage": "./db.development.sqlite"
-  },
-  "test": {
-    "dialect": "sqlite",
-    "storage": ":memory:"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
+    "development": {
+        "username": "sa",
+        "password": "pass@word1",
+        "database": "database_dev",
+        "server": ".",
+        "logging": true,
+        "dialect": "mssql",
+        "dialectOptions": {
+            "port": 1433
+        }
+    },
+    "test": {
+        "username": "sa",
+        "password": "pass@word1",
+        "database": "database_test",
+        "server": ".",
+        "logging": true,
+        "dialect": "mssql",
+        "dialectOptions": {
+            "port": 1433
+        }
+    },
+    "production": {
+        "username": "sa",
+        "password": "pass@word1",
+        "database": "database_prod",
+        "server": ".",
+        "logging": true,
+        "dialect": "mssql",
+        "dialectOptions": {
+            "port": 1433
+        }
+    }
 }
